@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="quote-card">
+
+    <h1>✨ Random Quote Generator</h1>
+
+    <div class="quote-icon">❝</div>
+
+    <p class="quote">
+        "{{ quote }}"
+    </p>
+
+    <p class="author">
+        — {{ author }}
+    </p>
+
+    <form method="GET">
+        <button class="btn">
+            🔄 New Quote
+        </button>
+    </form>
+
+</div>
+
+        <p class="author">
+            — {{ author }}
+        </p>
+
+        <form method="GET">
+            <button type="submit" class="btn">
+                Generate New Quote
+            </button>
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
